@@ -1,0 +1,62 @@
+@keyframes mudar_de_cor {
+    0%   {}
+    100% {color:#04d361;}
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 120px 1fr 60px;
+    height: 100vh;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    background: #121214;
+    height: 100%;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #04d361;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2vh;
+    border-top: 1px solid #53535350;
+    background-color: #121214;
+}
+
+.cabecalho{
+    background-color: #121214;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #53535350;
+}
+
+.cabecalho h1{
+    color: #04d361;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    margin-bottom: 0.5vh;
+}
+
+.cabecalho h2{
+    color: #737380;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vh;
+}
