@@ -28,11 +28,41 @@
                         </li>
                     </ul>
                 </div>
+                <div class="modulo">
+                    <h3>Teste</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php">
+                                Exemplo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modulo">
+                    <h3>Teste</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php">
+                                Exemplo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modulo">
+                    <h3>Teste</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php">
+                                Exemplo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </main>
     <footer class="rodape">
-        MDS PROJECTS © <?= date('Y'); ?>
+        CÓDIGO OVERFLOW © <?= date('Y'); ?>
     </footer>
 </body>
 </html>
