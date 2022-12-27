@@ -128,6 +128,13 @@ footer {
     border: 3px solid var(--destaque_tema_1);
     position: relative;
     list-style-type: none;
+    transition: all 350ms ease-in-out;
+}
+
+.modulo li:hover {
+    scale: 1.2;
+    z-index: 3;
+    box-shadow: 0px 10px 25px  rgb(0 0 0);
 }
 
 .modulo li:not(:last-child) {
