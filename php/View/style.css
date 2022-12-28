@@ -121,6 +121,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 1vh;
+    align-items: center;
 }
 
 .modulo li {
@@ -128,26 +129,33 @@ footer {
     border: 3px solid var(--destaque_tema_1);
     position: relative;
     list-style-type: none;
-    transition: all 350ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    width: 100%;
 }
 
 .modulo li:hover {
-    scale: 1.2;
+    opacity: 1 !important;
     z-index: 3;
-    box-shadow: 0px 10px 25px  rgb(0 0 0);
+}
+
+.modulo:hover li {
+    opacity: 0.5;
 }
 
 .modulo li:not(:last-child) {
     margin-bottom: 2vh;
 }
 
+.modulo ul:has(li:hover) li:not(:hover) {
+    opacity: 0.5;
+}
 
 .modulo li::before {
     content: " ";
     position: absolute;
     width: 0%;
     height: 100%;
-    transition: all 250ms ease-in-out;  
+    transition: all 150ms ease-in-out;  
     background: linear-gradient(90deg, var(--destaque_tema_1) 100%, #04d36100 0);
     
 }
