@@ -1,6 +1,4 @@
-@keyframes identifier {
-    
-}
+@keyframes identifier {}
 
 :root {
     --black_tema_1: #09090a;
@@ -117,6 +115,10 @@ footer {
     color: var(--suave_black_tema_1);
 }
 
+:has(.modulo:hover) .modulo:not(:hover) {
+    opacity: 0.5;
+}
+
 .modulo>ul {
     display: flex;
     flex-direction: column;
@@ -155,16 +157,16 @@ footer {
     position: absolute;
     width: 0%;
     height: 100%;
-    transition: all 150ms ease-in-out;  
+    transition: all 150ms ease-in-out;
     background: linear-gradient(90deg, var(--destaque_tema_1) 100%, #04d36100 0);
-    
+
 }
 
-.modulo li:hover::before{
+.modulo li:hover::before {
     width: 100%;
     animation-timing-function: ease-in-out;
     animation-duration: 2s;
-    background: linear-gradient(90deg, var(--destaque_tema_1) 100%, rgba(0 ,0 ,0 ,0) 0);
+    background: linear-gradient(90deg, var(--destaque_tema_1) 100%, rgba(0, 0, 0, 0) 0);
 }
 
 .modulo li a {
@@ -183,7 +185,7 @@ footer {
 }
 
 
-.modulo li a:hover {
+.modulo li:hover a {
     color: var(--suave_black_tema_1);
 }
 

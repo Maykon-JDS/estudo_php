@@ -1,0 +1,27 @@
+
+.conteudo>.exercicio {
+    color: white;
+}
+
+.cabecalho{
+    position: relative;
+}
+
+.cabecalho .botao_voltar {
+    position: absolute;
+    display: flex;
+    right: 0px;
+    height: 100%;
+    background: var(--destaque_tema_1);
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--black_tema_1);
+    transition: all 150ms ease-in-out;
+}
+
+.cabecalho .botao_voltar:hover {
+    opacity: 0.8;
+}
