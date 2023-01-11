@@ -15,7 +15,7 @@ function criacao_subtitulo(){
 
 function voltar(){
     if($_GET){
-        return "<a href='index.php' class='botao_voltar'>Voltar</a> ";
+        return "<a href='index.php' class='botao_voltar'>Menu</a> ";
     }
 }
 
